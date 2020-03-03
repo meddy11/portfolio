@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 98vw;
+	height: 100vh;
+	background-image: url(C:\Users\arsene\Desktop\portfolio\assets\img\background.jpg);
+
+}
+ul{
+	margin: auto;
+	padding: auto;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	 
+}
+.a_propos{
+	display: flex;
+	justify-content: space-around;
+	width: 98vw;
+	height: 100vh;
+	background-color: black;
+
+}
+.text_img{
+
+	text-align: inherit;
+    padding-top: 35vh;
+    /* padding-left: 1vw; */
+    padding-right: 3vw;
+    font-size: 2.1em;
+    color: white;;
+}
+.img_profil>img{
+	 height: 468px;
+    width: 320px;;
+}
+.img_profil{
+
+	padding-top: 70px;
+
+
+}
+.competence{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+
+	width: 98vw;
+	height: 100vh;
+	background-color: green;
+}
+.competence>div{
+
+	margin: 2px; 
+	height: 10vh;
+	width: 30vw;
+	background-color: white;
+	border: 1px solid black;
+	justify-content: space-around;
+}
+.realisations{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	width: 98vw;
+	background-color: red;
+}
+.realisations>div{
+	height: 30vh;
+	width: 20vw;
+	background-color: red;
+	background-color: white;
+	border: 1px solid black;
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 98vw;
+	height: 20vh;
+	background-color: black;
+}
+footer>div{
+	height: 10vh;
+	width: 10vw;
+	background-color: red;
+	background-color: white;
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+

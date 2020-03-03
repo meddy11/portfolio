@@ -1,0 +1,310 @@
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #000;
+	/*color: #fff;*/
+	line-height: 1.6;
+
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+/**********accueil*********/
+.accueil
+{
+	height: 10%;
+	width: 20%;
+	background: white;
+}
+#accueil
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	color: white;
+}
+#accueil>div
+{
+	/*background: white;*/
+	/*height: 80vh;*/
+	width: 100%;
+	color: white;
+
+}
+
+#accueil>div+div
+{
+	
+	margin-right: 20%;
+}
+		/*******navbar*****/
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	/*css*scrool*/
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+.navbar
+{
+	position: fixed;
+	justify-content: center;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 11%;
+	background: rgba(239,218,218,0.58);
+}
+
+.navbar ul
+{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+}
+
+.navbar ul li
+{
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+.navbar ul li a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f4f4f4;
+}
+.navbar ul li a:hover
+{
+	color: skyblue;
+}
+
+
+/******competence************/
+
+
+.body
+{
+	
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;	
+}
+.contenair
+{
+	padding-top: 18%;
+	padding-bottom: 18%;
+	position: relative;
+	width: 900px;
+	display: flex;
+	justify-content: space-around;
+}
+.contenair .card
+{
+	position: relative;
+	width: 250px;
+	background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.contenair .card:hover
+{
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+.contenair .card:before
+{
+
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.03);
+	pointer-events: none;
+	z-index: 1;
+
+}
+.percent
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #000;
+	background: #222;
+	z-index: 1000;
+
+}
+.percent .number
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+
+}
+.percent .number h2
+{
+	color: #777;
+	font-weight: 700;
+	font-size: 40px;
+	transition: 0.5s;
+}
+.card:hover .percent .number h2
+{
+	color: #fff;
+	font-size: 60px;
+}
+.percent .number h2 span
+{
+	font-size: 24px;
+	color: #777;
+	transition: 0.5s;
+}
+.card:hover .percent .number h2 span
+{
+	color: #777;
+
+}
+.text
+{
+	position: relative;
+	color: #777;
+	margin-top: 20px;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: uppercase;
+	transition: 0.5s;
+
+
+}
+
+.card:hover .text
+{
+	color: #fff;
+}
+
+svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	z-index: 1000;
+}
+
+svg circle
+{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #191919;
+	stroke-width:10;
+	stroke-linecap: round;
+	transform: translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+}
+
+.card:nth-child(1) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (404 * 60) / 100);
+	stroke: #00ff43;
+}
+.card:nth-child(2) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (404 * 120) / 100);
+	stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (404 * 3) / 100);
+	stroke: #ff04f7;
+}
+
+
+
+
+
+/*******p*******/
+
+
+
+#accueil>div+div p
+{
+	text-align: center;
+	font-size: 2em;
+	font-variant-caps: normal;
+	line-height: 98%;
+
+	
+
+
+}
+			/**********h1********/
+ h1
+{
+	font-family: 'EB Garamond', sans-serif;
+	font-size: 1.9em;
+	text-align: center;
+}
+
+			/********img******/
+.img
+{
+	padding-top: 10%;
+	width: 320px;
+	margin-left: 10%;
+}
+
+
+/***********realisation*********/
+
+#realisation
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+
+#realisation>div
+{
+	background: white;
+	height: 30vh;
+	width: 20vw;
+}
+
+
+/*******section image*********/
+
+div#accueil
+{
+	background: url() no-repeat center center/cover;
+}
